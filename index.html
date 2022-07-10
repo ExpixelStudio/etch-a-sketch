@@ -1,0 +1,66 @@
+<!DOCclass html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='style.css'>
+    <title>Etch A Sketch</title>
+</head>
+
+<body>
+    
+    <header>
+        <h1>Etch-A-Sketch</h1>
+        <h3>Select Grid Size</h3>
+    </header>
+
+    <div class="top-size-btns">
+        <button class="top-button" id="16x-btn">16 x 16</button>
+        <button class="tfocused-button" id="32x-btn">32 x 32</button>
+        <button class="top-button" id="64x-btn">64 x 64</button>
+        <button class="top-button" id="98x-btn">98 x 98</button>
+    </div>
+    
+
+    <main>
+        <div class="side-option-btns">
+            <label for="color-picker">Ink Color:
+                <input type = 'color' id = "color-picker"  value= "#000000">
+            </label>
+            <button class="sfocused-button" id="ink-btn">Ink Mode</button>
+            <button class="side-button" id="rgb-btn">RGB Mode</button>
+            <button class="side-button" id="eraser-btn">Eraser</button>
+        </div>
+
+        <div class='grid-container'>
+            <div class="cell-divs">
+                </div>
+        </div>
+
+        <div class="right-option-btns">
+            <span>
+                <input type = 'color' id ='bg-picker' value= "#cad1bf">
+                <label for="bg-picker"> BG Color</label>
+            </span>
+
+            <span>
+                <input type="checkbox" id = 'toogle-box' >
+                <label for ='toogle-box'> Show Grid</label>
+            </span>
+
+            <button class = "right-button" id="default-btn">Default</button>
+        </div>
+        
+    </main>
+
+        <div class = 'btm-option-btns'>
+            <button class="bot-button" id="clear-grid-btn">CLEAR GRID</button>
+        </div>
+
+            <script src='/script.js'></script>
+
+</body>
+
+</html>
