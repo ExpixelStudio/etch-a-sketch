@@ -24,10 +24,6 @@ let cellColor = cssValue.getPropertyValue('--cellColor');
 //console.log(gridSize);
 
 
-//const blabla = document.querySelectorAll('.grid-cell');
-
-//blabla.style.borderColor = '#cad1bf';
-
 function createDivs() {
 
     for (let i = 0; i < gridSize ** 2; i++) {
@@ -189,9 +185,6 @@ function activeSideBtn() {
 }
 
 
-/* topBtns.addEventListener('click', function(e) {
-    topBtns.style.background = "green";
-}); */
 
 inkBtn.addEventListener('click', hoverDraw);
 
@@ -199,7 +192,6 @@ rgbBtn.addEventListener('click', rgbDraw);
 
 eraseBtn.addEventListener('click', hoverErase); 
 
-//document.addEventListener('mouseover', toogleGrid);
 
 
 
@@ -302,15 +294,3 @@ hoverDraw();
 //rndColor();
 
 
-/* eraseBtn.addEventListener('click' , function(e) { 
-    if (eraseBtn.textContent === 'Eraser') {
-            eraseBtn.textContent = 'Draw';
-            eraseBtn.style.background = '#4CAF50';
-            hoverErase();
-        } else if (eraseBtn.textContent === 'Draw') {
-            eraseBtn.style.background = 'none';
-            eraseBtn.textContent = 'Eraser';
-            
-            hoverDraw();
-    }
-}) ; */
